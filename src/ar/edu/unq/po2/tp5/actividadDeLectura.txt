@@ -1,0 +1,39 @@
+1)
+La implementación de una interfaz permite que una clase se vuelva más formal
+ sobre el comportamiento que promete proporcionar. Las interfaces forman un 
+ contrato entre la clase y el mundo exterior, y el compilador hace cumplir 
+ este contrato en el momento de la compilación. Si su clase afirma implementar una interfaz, 
+ todos los métodos definidos por esa interfaz deben aparecer en su código fuente antes 
+ de que la clase se compile correctamente.
+ 
+ 2) En el caso de que el método no pudiera ser reimplementado por las clases hijas, que heredan los mensajes de la clase
+   abstracta, no podrán sobreescribir esa funcionalidad. Esta relación se basa en la herencia, y solo se permite
+   heredar de una única clase. El hecho de poder heredar de solamente una clase nos puede generar acoplamiento y la
+   necesidad de otro tipo de alternativas cuando la única opción que tenemos es heredar de una clase específica.
+   Una alternativa al uso de clases abstractas viene dado por las interfaces y los métodos de extensión.
+
+3)Las ventajas que tienen las clases abstractas son:
+   - Una clase abstracta puede proporcionar la implementación de una interfaz, mientras que una interfaz no puede
+     proporcionar la implementación de una clase abstracta.
+
+   - Las clases asbtractas pueden tener mensajes con implementaciones siempre y cuando tengan al menos un mensaje
+     abstracto, en cambio las interfaces proporcionan una abstracción absoluta, por lo tanto no pueden tener mensajes
+     con implementación, al menos hasta JAVA 8.
+
+   - Las clases abstractas pueden tener modificadores de acceso públicos, privados, estáticos y protegidos. Mientras
+     que en las interfaces los métodos son implícitamente públicos y abstractos.
+
+   - Las clases abstractas son ideales para la reutilización de código y la perspectiva de la evolución , mientras que
+     la interfaz es ideal unicamente para la declaración de tipos.
+     
+ 4) No se pueden instancias objetos del tipo interfaz, ya que ellas no cuentan con un constructor.
+ Sin embargo, se puede utilizar el nombre de la interfaz creada en cualquier lugar en el que se pueda
+ utilizar un nombre de tipo de dato.
+ 
+ 5) La firma del tipo del método de implementación debe coincidir exactamente con la firma de tipo especificada en la
+   definición de la interfaz. Si se incrementaran o modificaran las firmas ya definidias al principio de
+   la interfaz, podríamos romper con su implementación alterando sus métodos y los tipos de parámetros que utilizan
+   dichos métodos.
+   
+ 6) En lenguajes como Smalltalk no es necesaria la implementación de Interfaces ya que en mi primer lugar no es un lenguaje
+   que esté fuertemente tipado y las interfaces son utilizadas, entre otras cosas, para la declaración de tipos.

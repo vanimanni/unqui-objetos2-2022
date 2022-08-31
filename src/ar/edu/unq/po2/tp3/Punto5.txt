@@ -1,0 +1,20 @@
+Teniendo en cuenta la documentación oficial de Java:
+1. ¿Qué son los tipos de datos primitivos?
+2. ¿Cuál es la diferencia entre un int y un Integer?
+3. ¿Si se define una variable de instancia de tipo int cual sería su valor predeterminado? ¿Y si se
+define una de tipo Integer? Haga la prueba en Eclipse.
+4. Responder la pregunta del punto anterior (3), pero ahora en lugar de definir una variable de
+instancia se define una variable de método.
+
+
+1) los tipos de datos primitivos, vienen predefinidos en java y no son un objeto.
+
+2) La diferencia sustancial es que, en JAVA, int es un tipo primitivo,
+ no un objeto, mientras que Integer es un objeto o una Clase. 
+ Dicho en lenguaje coloquial: un int es un número, y un Integer es un 
+ puntero que hace referencia a una clase que contiene un entero.
+ 
+3)el valor predeterminado de una variable int, es 0.
+  y si se defini un integer el valor predeterminado es NULL.
+
+4) NO SE PUEDE, genera un error. 
